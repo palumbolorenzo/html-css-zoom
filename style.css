@@ -39,6 +39,7 @@ body {
     display: flex;
     /* justify-content: space-between; */
     flex-wrap: wrap;
+    flex-grow: 1;
     gap: 2em;
     overflow-y: auto;
 }
@@ -50,7 +51,14 @@ body {
 
 .tag {
     position: absolute;
-    filter: brightness(30%);
+    bottom: 3px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: .8em;
+}
+
+img {
+    display: block;
 }
 
 .name {
@@ -58,6 +66,7 @@ body {
 }
 
 main {
+    /* height: calc(100vh - 50px - 100px); */
 
 }
 
@@ -72,6 +81,7 @@ footer {
     left: 0;
     right: 0;
     height: 100px;
+    width: 100%;
 }
 
 a {
@@ -86,10 +96,6 @@ a {
 
 span {
     display: block;
-}
-
-.button {
-    
 }
 
 .column-right {
